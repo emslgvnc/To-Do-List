@@ -1,0 +1,135 @@
+/* Arkaplanı resim ekledik 'pixabay.com' sitesinden ücretsiz resimler indirebilirsiniz. */
+
+body {
+    background-image: url(img/lines-6975227_1920.jpg);
+}
+
+
+/* Başlığı düzenleyelim*/
+
+.section-todo-list {
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    border: solid 1px;
+    background-color: #d1b196;
+    height: 65px;
+    width: 500px;
+    border-radius: 35px;
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+
+/* Buton duzenleme */
+
+.input-btn {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.input-btn input {
+    width: 80%;
+    height: 45px;
+    border-radius: 12px;
+    border-color: rgb(108, 132, 153);
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.input-btn button {
+    width: 20%;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #d1b196;
+    color: black;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+    border: none;
+}
+
+.input-btn button:hover {
+    background-color: #77685c;
+    color: black;
+    transition: all 0.5s 0s ease;
+}
+
+.input-btn button:not(:hover) {
+    transition: all 0.5s 0s ease;
+}
+
+
+/* Listelerin düzenlenmesi */
+
+.list-tasks {
+    margin-bottom: 10%;
+}
+
+.list-tasks ul {
+    margin: 1px 15px;
+}
+
+.list-tasks li {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: #f5deb3;
+    border-radius: 15px;
+    padding: 9px 7px;
+}
+
+.list-tasks li:first-letter {
+    color: #a28d7c;
+    text-transform: uppercase;
+    background-color: #d1b196;
+}
+
+.list-tasks li span {
+    background-color: #d1b196;
+    border-radius: 50%;
+    padding: 2px 10px;
+    color: black;
+    cursor: pointer;
+    height: 25px;
+}
+
+.list-tasks li span:hover {
+    background-color: #a28d7c;
+    transition: all 0.5s 0s ease;
+}
+
+
+/* Kaldır butonunu düzenlemek için */
+
+.remove-all {
+    border-radius: none;
+    border-color: #77685c;
+    background-color: #f5deb3;
+    color: rgb(39, 43, 61);
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 18px;
+}
+
+.remove-all:hover {
+    background-color: #a28d7c;
+    color: black;
+    transition: all 0.5s 0s ease;
+}
+
+
+/* Belli bir değer aralığında görüntüleme sağlar (duyarlılık)*/
+
+@media only screen and (max-width: 768px) {
+    .section-todo-list {
+        width: 90%;
+    }
+}
